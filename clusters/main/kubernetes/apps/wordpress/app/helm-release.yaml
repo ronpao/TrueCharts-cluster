@@ -71,17 +71,17 @@ spec:
       wordpress:
         enabled: true
         primary: true
-        ingressClassName: external
+        ingressClassName: internal
         hosts:
-          - host: "www.${DOMAIN_0}"
-            paths:
-              - path: /
+#          - host: "www.${DOMAIN_0}"
+#            paths:
+#              - path: /
           - host: wordpress.cloud.local
             paths:
               - path: /
         tls:
           - hosts:
-              - "www.${DOMAIN_0}"
+#              - "www.${DOMAIN_0}"
               - wordpress.cloud.local
         integrations:
           traefik:
