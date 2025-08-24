@@ -71,7 +71,7 @@ spec:
       wordpress:
         enabled: true
         primary: true
-        ingressClassName: internal
+#        ingressClassName: internal
         hosts:
 #          - host: "www.${DOMAIN_0}"
 #            paths:
