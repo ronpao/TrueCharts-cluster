@@ -39,12 +39,16 @@ spec:
           - host: "www.${DOMAIN_0}"
             paths:
               - path: /
+          - host: "${DOMAIN_0}"
+            paths:
+              - path: /
 #          - host: wordpress.cloud.local
 #            paths:
 #              - path: /
         tls:
           - hosts:
               - "www.${DOMAIN_0}"
+              - "${DOMAIN_0}"
 #              - wordpress.cloud.local
         integrations:
           traefik:
