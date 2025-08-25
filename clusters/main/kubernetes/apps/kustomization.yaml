@@ -4,3 +4,4 @@ resources:
   - kubernetes-dashboard/ks.yaml
   - wordpress/ks.yaml
   - nextcloud/ks.yaml
+  - cloudflared/ks.yaml
