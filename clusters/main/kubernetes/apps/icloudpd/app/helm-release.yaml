@@ -32,24 +32,7 @@ spec:
   values:
     icloudpd:
       apple_id: "${APPLE_ID}"
-    credentials:
-      s3:
-        type: s3
-        url: "${S3_ENDPOINT}"
-        bucket: "${S3_BUCKET}"
-        accessKey: "${S3_ID}"
-        secretKey: "${S3_KEY}"
-        encrKey: "${S3_KEY}"
     persistence:
-      config:
-        volsync:
-          - name: config
-            type: restic
-            credentials: s3
-            dest:
-              enabled: true
-            src:
-              enabled: true
       data:
         type: nfs 
         path: /mnt/NASCasa/icloudpd
