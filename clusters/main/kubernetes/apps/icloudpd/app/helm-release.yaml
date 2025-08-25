@@ -2,13 +2,13 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: cloudpd
-  namespace: cloudpd
+  name: icloudpd
+  namespace: icloudpd
 spec:
   interval: 15m
   chart:
     spec:
-      chart: cloudpd
+      chart: icloudpd
       version: 9.3.2
       sourceRef:
         kind: HelmRepository
