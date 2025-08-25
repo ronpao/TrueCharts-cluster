@@ -5,4 +5,4 @@ resources:
   - wordpress/ks.yaml
   - nextcloud/ks.yaml
   - cloudflared/ks.yaml
-  #- icloudpd/ks.yaml
+  - icloudpd/ks.yaml
