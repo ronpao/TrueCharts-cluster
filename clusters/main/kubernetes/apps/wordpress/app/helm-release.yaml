@@ -30,59 +30,22 @@ spec:
   uninstall:
     keepHistory: false
   values:
-#    credentials:
-#      s3:
-#        type: s3
-#        url: "${S3_ENDPOINT}"
-#        bucket: "${S3_BUCKET}"
-#        accessKey: "${S3_ID}"
-#        secretKey: "${S3_KEY}"
-#        encrKey: "${S3_KEY}"
-#    mariadb: 
-#      credentials:
-#        s3:
-#          type: s3
-#          url: "${S3_ENDPOINT}"
-#          bucket: "${S3_BUCKET}"
-#          accessKey: "${S3_ID}"
-#          secretKey: "${S3_KEY}"
-#          encrKey: "${S3_KEY}"
-#      persistence:
-#        data: 
-#          volsync:
-#            - name: mariadb-data
-#              type: restic
-#              credentials: s3
-#              dest:
-#                enabled: true
-#              src:
-#                enabled: true
-#    persistence:
-#      config:
-#        volsync:
-#          - name: config
-#            type: restic
-#            credentials: s3
-#            dest:
-#             enabled: true
-#            src:
-#              enabled: true
     ingress:
       wordpress:
         enabled: true
         primary: true
-#        ingressClassName: internal
+        ingressClassName: external
         hosts:
-#          - host: "www.${DOMAIN_0}"
-#            paths:
-#              - path: /
-          - host: wordpress.cloud.local
+          - host: "www.${DOMAIN_0}"
             paths:
               - path: /
+#          - host: wordpress.cloud.local
+#            paths:
+#              - path: /
         tls:
           - hosts:
-#              - "www.${DOMAIN_0}"
-              - wordpress.cloud.local
+              - "www.${DOMAIN_0}"
+#              - wordpress.cloud.local
         integrations:
           traefik:
             enabled: false

@@ -43,53 +43,27 @@ spec:
         initialAdminPassword: adminpass
       general:
         default_phone_region: IT
-        #accessIP: ${NGINX_EXTERNAL_IP}
-        accessIP: ${NGINX_INTERNAL_IP}
+        accessIP: ${NGINX_EXTERNAL_IP}
+        #accessIP: ${NGINX_INTERNAL_IP}
     ingress:
       main:
         enabled: true
         ingressClassName: internal
         hosts:
-          #- host: "nextcloud.${DOMAIN_0}"
-          #  paths:
-          #    - path: /
-          - host: nextcloud.cloud.local
+          - host: "nextcloud.${DOMAIN_0}"
             paths:
               - path: /
+#          - host: nextcloud.cloud.local
+#            paths:
+#              - path: /
         tls:
           - hosts:
-            #  - "nextcloud.${DOMAIN_0}"
-              - nextcloud.cloud.local
+              - "nextcloud.${DOMAIN_0}"
+#              - nextcloud.cloud.local
         integrations:
           traefik:
             enabled: false
-#    credentials:
-#      s3:
-#        type: s3
-#        url: "${S3_ENDPOINT}"
-#        bucket: "${S3_BUCKET}"
-#        accessKey: "${S3_ID}"
-#        secretKey: "${S3_KEY}"
-#        encrKey: "${S3_KEY}"
     persistence:
-#      html:
-#        volsync:
-#          - name: html
-#            type: restic
-#            credentials: s3
-#            dest:
-#            src:
-#             enabled: true
-#              enabled: true
-#      config:
-#        volsync:
-#          - name: config
-#            type: restic
-#            credentials: s3
-#            dest:
-#             enabled: true
-#            src:
-#              enabled: true
       data:
         type: nfs 
         path: /mnt/NASCasa/nextcloud
@@ -110,11 +84,4 @@ spec:
             nginx:
               mountPath: /var/www/html/data
               readOnly: true
-    
-#    cnpg:
-#      main:
-#        backups:
-#          enabled: true
-#          credentials: s3
-#        recovery:
-#          credentials: s3
+
