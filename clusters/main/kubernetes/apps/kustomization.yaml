@@ -5,3 +5,4 @@ resources:
   - wordpress/ks.yaml
   - nextcloud/ks.yaml
   - cloudflared/ks.yaml
+  - calibre-web/ks.yaml
