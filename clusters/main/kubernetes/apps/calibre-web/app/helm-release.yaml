@@ -45,13 +45,13 @@ spec:
         integrations:
           traefik:
             enabled: false
-      persistence:
-        data:
-          enabled: true
-          type: nfs 
-          path: /mnt/NASCasa/Calibre
-          server: "192.168.1.123"
-          targetSelector:
+    persistence:
+      data:
+        enabled: true
+        type: nfs 
+        path: /mnt/NASCasa/Calibre
+        server: "192.168.1.123"
+        targetSelector:
+          main:
             main:
-              main:
-                mountPath: /mnt/data
+              mountPath: /mnt/data
