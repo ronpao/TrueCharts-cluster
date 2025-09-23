@@ -54,4 +54,4 @@ spec:
         targetSelector:
           main:
             main:
-              mountPath: /mnt/data
+              mountPath: /books
