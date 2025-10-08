@@ -6,4 +6,4 @@ resources:
   - nextcloud/ks.yaml
   - cloudflared/ks.yaml
   - calibre-web/ks.yaml
-  #- lyrion/ks.yaml
+  - lyrion/ks.yaml
