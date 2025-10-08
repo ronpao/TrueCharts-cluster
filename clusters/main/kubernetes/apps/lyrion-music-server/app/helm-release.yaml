@@ -4,6 +4,7 @@ kind: HelmRelease
 metadata:
   name: lyrion-music-server
   namespace: lyrion-music-server
+spec:
   interval: 15m
   chart:
     spec:
