@@ -45,10 +45,4 @@ spec:
         integrations:
           traefik:
             enabled: false
-    persistence:
-      data:
-        enabled: true
-        type: nfs 
-        path: /mnt/NASCasa/Lyrion
-        server: "192.168.1.123"
-        mountPath: /musica
+    
