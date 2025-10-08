@@ -29,20 +29,5 @@ spec:
       retries: 3
   uninstall:
     keepHistory: false
-  values:
-    ingress:
-      calibre-web:
-        enabled: true
-        primary: true
-        ingressClassName: external
-        hosts:
-          - host: "lyrion.${DOMAIN_0}"
-            paths:
-              - path: /
-        tls:
-          - hosts:
-              - "lyrion.${DOMAIN_0}"
-        integrations:
-          traefik:
-            enabled: false
+
     
