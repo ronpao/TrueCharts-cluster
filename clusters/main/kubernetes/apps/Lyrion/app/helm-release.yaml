@@ -2,14 +2,13 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: calibre-web
-  namespace: calibre-web
-spec:
+  name: lyrion-music-server
+  namespace: lyrion-music-server
   interval: 15m
   chart:
     spec:
-      chart: calibre-web
-      version: 21.5.2
+      chart: lyrion-music-server
+      version: 5.8.2
       sourceRef:
         kind: HelmRepository
         name: truecharts
@@ -36,12 +35,12 @@ spec:
         primary: true
         ingressClassName: external
         hosts:
-          - host: "calibre.${DOMAIN_0}"
+          - host: "lyrion.${DOMAIN_0}"
             paths:
               - path: /
         tls:
           - hosts:
-              - "calibre.${DOMAIN_0}"
+              - "lyrion.${DOMAIN_0}"
         integrations:
           traefik:
             enabled: false
@@ -49,6 +48,6 @@ spec:
       data:
         enabled: true
         type: nfs 
-        path: /mnt/NASCasa/Calibre
+        path: /mnt/NASCasa/Lyrion
         server: "192.168.1.123"
-        mountPath: /books
+        mountPath: /musica
