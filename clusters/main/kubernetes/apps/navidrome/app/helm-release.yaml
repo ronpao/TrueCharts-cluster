@@ -55,10 +55,10 @@ spec:
           traefik:
             enabled: false
     workload:
-      navidrome:
+      main:
         podSpec:
           containers:
-            navidrome:
+            main:
               resources:
                 requests:
                   cpu: 50m
