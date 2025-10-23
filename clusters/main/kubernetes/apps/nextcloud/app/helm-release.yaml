@@ -89,6 +89,9 @@ spec:
               mountPath: /var/www/html/data
               readOnly: true
     workload:
+      workload-name:
+        podSpec:
+          hostUsers: true
       main:
         podSpec:
           containers:
