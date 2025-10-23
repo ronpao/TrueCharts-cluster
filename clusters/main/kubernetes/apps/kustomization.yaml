@@ -8,3 +8,4 @@ resources:
   - calibre-web/ks.yaml
   - lyrion-music-server/ks.yaml
   - navidrome/ks.yaml
+  - renovate/ks.yaml
