@@ -96,4 +96,22 @@ spec:
               resources:
                 requests:
                   cpu: 50m
+    nginx:
+      workload:
+        main:
+          podSpec:
+            containers:
+              main:
+                resources:
+                  resources:
+                    cpu: 30m
+    imaginary:
+      workload:
+        main:
+          podSpec:
+            containers:
+              main:
+                resources:
+                  resources:
+                    cpu: 50m
 
