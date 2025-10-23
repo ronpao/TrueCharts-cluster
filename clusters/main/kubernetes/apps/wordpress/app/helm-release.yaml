@@ -38,13 +38,16 @@ spec:
               resources:
                 requests:
                   cpu: 50m
-      mariadb:
-        podSpec:
-          containers:
-            mariadb:
-              resources:
-                requests:
-                  cpu: 50m
+                
+    mariadb:
+      workload:
+        main:
+          podSpec:
+            containers:
+              main:
+                resources:
+                  requests:
+                    cpu: 50m
     ingress:
       wordpress:
         enabled: true
