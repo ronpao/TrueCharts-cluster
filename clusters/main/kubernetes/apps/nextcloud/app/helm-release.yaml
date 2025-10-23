@@ -95,7 +95,7 @@ spec:
             main:
               resources:
                 requests:
-                  cpu: 35m
+                  cpu: 50m
       nginx:
         podSpec:
           containers:
@@ -109,5 +109,5 @@ spec:
             imaginary:
               resources:
                 requests:
-                  cpu: 35m
+                  cpu: 50m
 
