@@ -88,4 +88,12 @@ spec:
             nginx:
               mountPath: /var/www/html/data
               readOnly: true
+    workload:
+      nextcloud:
+        podSpec:
+          containers:
+            nextcloud:
+              resources:
+                requests:
+                  cpu: 50m
 
