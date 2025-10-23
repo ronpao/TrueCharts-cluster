@@ -31,10 +31,10 @@ spec:
     keepHistory: false
   values:
     workload:
-      wordpress:
+      main:
         podSpec:
           containers:
-            wordpress:
+            main::
               resources:
                 requests:
                   cpu: 50m
