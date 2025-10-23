@@ -30,6 +30,10 @@ spec:
   uninstall:
     keepHistory: false
   values:
+    clamav:
+      enabled: false
+    collabora:
+      enabled: false
     nextcloud:
       php:
         memory_limit: 3G
