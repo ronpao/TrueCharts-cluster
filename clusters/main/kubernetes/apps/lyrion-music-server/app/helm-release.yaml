@@ -31,10 +31,10 @@ spec:
     keepHistory: false
   values:
     workload:
-      lyrion-music-server:
+      main:
         podSpec:
           containers:
-            lyrion-music-server:
+            main:
               resources:
                 requests:
                   cpu: 50m

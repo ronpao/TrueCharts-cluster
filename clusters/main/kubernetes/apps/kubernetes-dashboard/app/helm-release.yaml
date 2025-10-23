@@ -52,10 +52,10 @@ spec:
           traefik:
             enabled: false
     workload:
-      kubernetes-dashboard:
+      main:
         podSpec:
           containers:
-            kubernetes-dashboard:
+            main:
               resources:
                 requests:
                   cpu: 50m

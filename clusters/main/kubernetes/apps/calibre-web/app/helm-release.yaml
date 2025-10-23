@@ -31,10 +31,10 @@ spec:
     keepHistory: false
   values:
     workload:
-      calibre-web:
+      main:
         podSpec:
           containers:
-            calibre-web:
+            main:
               resources:
                 requests:
                   cpu: 50m
