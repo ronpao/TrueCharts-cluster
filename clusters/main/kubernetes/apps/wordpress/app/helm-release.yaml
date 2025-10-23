@@ -34,7 +34,7 @@ spec:
       main:
         podSpec:
           containers:
-            main::
+            main:
               resources:
                 requests:
                   cpu: 50m
