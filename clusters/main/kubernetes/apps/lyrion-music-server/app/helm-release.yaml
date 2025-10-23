@@ -29,5 +29,13 @@ spec:
       retries: 3
   uninstall:
     keepHistory: false
-
+  values:
+    workload:
+      lyrion-music-server:
+        podSpec:
+          containers:
+            lyrion-music-server:
+              resources:
+                requests:
+                  cpu: 50m
     

@@ -51,3 +51,11 @@ spec:
         integrations:
           traefik:
             enabled: false
+    workload:
+      kubernetes-dashboard:
+        podSpec:
+          containers:
+            kubernetes-dashboard:
+              resources:
+                requests:
+                  cpu: 50m

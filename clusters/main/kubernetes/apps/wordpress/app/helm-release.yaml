@@ -30,6 +30,21 @@ spec:
   uninstall:
     keepHistory: false
   values:
+    workload:
+      wordpress:
+        podSpec:
+          containers:
+            wordpress:
+              resources:
+                requests:
+                  cpu: 50m
+      mariadb:
+        podSpec:
+          containers:
+            mariadb:
+              resources:
+                requests:
+                  cpu: 50m
     ingress:
       wordpress:
         enabled: true

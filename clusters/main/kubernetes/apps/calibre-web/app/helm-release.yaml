@@ -30,6 +30,14 @@ spec:
   uninstall:
     keepHistory: false
   values:
+    workload:
+      calibre-web:
+        podSpec:
+          containers:
+            calibre-web:
+              resources:
+                requests:
+                  cpu: 50m
     ingress:
       calibre-web:
         enabled: true

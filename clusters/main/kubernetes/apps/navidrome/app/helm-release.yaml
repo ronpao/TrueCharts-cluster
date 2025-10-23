@@ -54,3 +54,11 @@ spec:
         integrations:
           traefik:
             enabled: false
+    workload:
+      navidrome:
+        podSpec:
+          containers:
+            navidrome:
+              resources:
+                requests:
+                  cpu: 50m
