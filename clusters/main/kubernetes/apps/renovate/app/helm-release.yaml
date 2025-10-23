@@ -33,7 +33,7 @@ spec:
   values:
     workload:
       main:
-        schedule: "5 * * * *"
+        schedule: "*/5 * * * *"
         podSpec:
           containers:
             main:
@@ -48,7 +48,7 @@ spec:
         data:
           renovate-config.json: |-
             {
-              'repositories': ['/ronpao/TrueCharts-cluster']
+              'repositories': ['ronpao/TrueCharts-cluster']
             }
     persistence:
       configmap-vol:
