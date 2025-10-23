@@ -108,6 +108,7 @@ spec:
                   cpu: 30m
       imaginary:
         podSpec:
+          hostUsers: true
           containers:
             imaginary:
               resources:
