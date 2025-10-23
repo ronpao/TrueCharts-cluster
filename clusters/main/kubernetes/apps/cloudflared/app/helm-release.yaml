@@ -39,4 +39,4 @@ spec:
                 TUNNEL_TOKEN: "${CLOUDFLARED_TUNNEL_TOKEN}"
               resources:
                 requests:
-                  cpu: 50m
+                  cpu: 35m

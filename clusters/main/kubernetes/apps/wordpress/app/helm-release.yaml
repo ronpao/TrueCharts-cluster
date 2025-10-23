@@ -37,19 +37,19 @@ spec:
             main:
               resources:
                 requests:
-                  cpu: 50m
+                  cpu: 35m
       nginx:
         podSpec:
           containers:
             nginx:
               resources:
-                cpu: 50m
+                cpu: 35m
       notify:
         podSpec:
           containers:
             notify:
               resources:
-                cpu: 50m
+                cpu: 35m
                 
     mariadb:
       workload:
@@ -59,7 +59,7 @@ spec:
               main:
                 resources:
                   requests:
-                    cpu: 50m
+                    cpu: 35m
     ingress:
       wordpress:
         enabled: true

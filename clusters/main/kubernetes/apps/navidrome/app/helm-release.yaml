@@ -61,4 +61,4 @@ spec:
             main:
               resources:
                 requests:
-                  cpu: 50m
+                  cpu: 35m
