@@ -89,10 +89,10 @@ spec:
               mountPath: /var/www/html/data
               readOnly: true
     workload:
-      nextcloud:
+      main:
         podSpec:
           containers:
-            nextcloud:
+            main:
               resources:
                 requests:
                   cpu: 50m
