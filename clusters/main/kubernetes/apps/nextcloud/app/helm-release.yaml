@@ -70,24 +70,24 @@ spec:
     persistence:
       data:
         type: nfs 
-        path: /mnt/NASCasa/nextcloud
+        path: /mnt/NASCasa/Nextcloud-data
         server: "192.168.1.123"
-#        targetSelector:
-#          main:
-#            main:
-#              mountPath: /var/www/html/data
-#            init-perms:
-#              mountPath: /var/www/html/data
-#          nextcloud-cron:
-#            nextcloud-cron:
-#              mountPath: /var/www/html/data
-#          preview-cron:
-#            preview-cron:
-#              mountPath: /var/www/html/data
-#          nginx:
-#            nginx:
-#              mountPath: /var/www/html/data
-#              readOnly: true
+        targetSelector:
+          main:
+            main:
+              mountPath: /var/www/html/data
+            init-perms:
+              mountPath: /var/www/html/data
+          nextcloud-cron:
+            nextcloud-cron:
+              mountPath: /var/www/html/data
+          preview-cron:
+            preview-cron:
+              mountPath: /var/www/html/data
+          nginx:
+            nginx:
+              mountPath: /var/www/html/data
+              readOnly: true
     workload:
       main:
         podSpec:
