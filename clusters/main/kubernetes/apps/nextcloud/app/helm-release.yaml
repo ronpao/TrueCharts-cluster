@@ -72,22 +72,22 @@ spec:
         type: nfs 
         path: /mnt/NASCasa/nextcloud
         server: "192.168.1.123"
-        targetSelector:
-          main:
-            main:
-              mountPath: /var/www/html/data
-            init-perms:
-              mountPath: /var/www/html/data
-          nextcloud-cron:
-            nextcloud-cron:
-              mountPath: /var/www/html/data
-          preview-cron:
-            preview-cron:
-              mountPath: /var/www/html/data
-          nginx:
-            nginx:
-              mountPath: /var/www/html/data
-              readOnly: true
+#        targetSelector:
+#          main:
+#            main:
+#              mountPath: /var/www/html/data
+#            init-perms:
+#              mountPath: /var/www/html/data
+#          nextcloud-cron:
+#            nextcloud-cron:
+#              mountPath: /var/www/html/data
+#          preview-cron:
+#            preview-cron:
+#              mountPath: /var/www/html/data
+#          nginx:
+#            nginx:
+#              mountPath: /var/www/html/data
+#              readOnly: true
     workload:
       main:
         podSpec:
@@ -95,14 +95,14 @@ spec:
             main:
               resources:
                 requests:
-                  cpu: 50m
+                  cpu: 100m
       nginx:
         podSpec:
           containers:
             nginx:
               resources:
                 requests:
-                  cpu: 30m
+                  cpu: 50m
       imaginary:
         podSpec:
           hostUsers: true
