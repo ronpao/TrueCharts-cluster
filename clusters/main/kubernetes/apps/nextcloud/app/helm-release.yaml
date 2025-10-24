@@ -91,6 +91,7 @@ spec:
     workload:
       main:
         podSpec:
+          hostUsers: false
           containers:
             main:
               resources:
@@ -98,6 +99,7 @@ spec:
                   cpu: 100m
       nginx:
         podSpec:
+          hostUsers: false
           containers:
             nginx:
               resources:
@@ -105,7 +107,7 @@ spec:
                   cpu: 50m
       imaginary:
         podSpec:
-          hostUsers: true
+          hostUsers: false
           containers:
             imaginary:
               resources:
