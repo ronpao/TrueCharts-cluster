@@ -33,6 +33,7 @@ spec:
     workload:
       main:
         podSpec:
+          hostUsers: false
           containers:
             main:
               env:
