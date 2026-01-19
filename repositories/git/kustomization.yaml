@@ -5,11 +5,3 @@ kind: Kustomization
 resources:
   - this-repo.yaml
   - truecharts.yaml
-  - bjw-s.yaml
-  - cloudnative-pg.yaml
-  - home-ops-mirror.yaml
-  - jetstack.yaml
-  - kustomization.yaml
-  - metallb.yaml
-  - prometheus-community.yaml
-  - spegel.yaml
