@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: renovate
-      version: 4.26.4
+      version: 4.27.3
       sourceRef:
         kind: HelmRepository
         name: truecharts
