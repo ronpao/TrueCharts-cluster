@@ -38,18 +38,6 @@ spec:
               resources:
                 requests:
                   cpu: 35m
-      nginx:
-        podSpec:
-          containers:
-            nginx:
-              resources:
-                cpu: 35m
-      notify:
-        podSpec:
-          containers:
-            notify:
-              resources:
-                cpu: 35m
                 
     mariadb:
       workload:
