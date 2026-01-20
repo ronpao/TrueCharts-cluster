@@ -34,7 +34,7 @@ spec:
 
       music:
         type: nfs 
-        path: /mnt/NASCasa/Music
+        path: /mnt/NASCasa/Musica
         server: "192.168.1.123"
     ingress:
       main:
