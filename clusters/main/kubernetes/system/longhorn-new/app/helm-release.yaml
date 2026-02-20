@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: longhorn-new
-  namespace: longhorn-system
+  namespace: longhorn-system-new
 spec:
   interval: 5m
   releaseName: longhorn
